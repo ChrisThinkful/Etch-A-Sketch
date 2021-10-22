@@ -9,3 +9,4 @@
  - Add an RGB color palette selector to replace color buttons
  - Add a slider for size change ranging from 1x1 to 64x64 to replace size buttons
  - Add an eraser
+ - Add a favicon
