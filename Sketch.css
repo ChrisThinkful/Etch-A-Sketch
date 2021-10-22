@@ -1,15 +1,70 @@
-#container {
-    display: flex;
-    flex-wrap: wrap;
-    height: 400px;
-    width: 400px;
-    background-color: grey;
+body {
+    background-image: url(https://images.unsplash.com/photo-1531685250784-7569952593d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1674&q=80);
+    background-size: cover;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    min-height: 100vh;
 }
 
-#container div {
-    width: 23px;
-    height: 23px;
-    background-color: green;
-    border: black solid 1px;
-    text-align: center;
+h1 {
+    font-family: 'Press Start 2P';
+    font-size: 2rem;
+    margin: 40px 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+span {
+    font-size: 9px;
+    color:rgb(116, 115, 115)
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 835px;
+}
+
+.menu_options {
+    display: flex;
+}
+
+.list {
+    margin-top: 10px;
+    padding: 0;
+}
+
+#sizes__list {
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: #fff;
+    width: 70%;
+    margin: 5px 0;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(146, 146, 146);
+}
+
+.grid {
+    background-color: #fff;
+    display: grid;
+    width: 480px;
+    height: 480px;
+    box-shadow: 0px 0px 20px grey;
+    cursor: crosshair;
 }
