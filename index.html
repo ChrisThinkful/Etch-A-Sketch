@@ -5,15 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Sketch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-    <div id="game__heading">
-        <h1>Etch-A-Sketch</h1>
-    </div>
-    <div id="container">
-        Grid goes here
-    </div>
-    <script src="Etch.js"></script>
-</body>
+    <body>
+        <div id="game__heading">
+            <h1>Etch-A-Sketch</h1>
+        </div>
+        <div class="container">
+            <div class="menu__options">
+                <p>Colors:</p>
+                <span>(will not reset canvas)</span>
+                <div id='colors__list' class="list">
+                    <button id="colorRed__btn">Red</button>
+                    <button id="colorBlue__btn">Blue</button>
+                    <button id="colorBlack__btn">Black</button>
+                </div>
+                <p>Sizes:</p>
+                <span>(will reset canvas)</span>
+                <div id='sizes__list' class="list">
+                    <button id="size16__btn">16 x 16</button>
+                    <button id="size32__btn">32 x 32</button>
+                    <button id="size64__btn">64 x 64</button>
+                </div>
+                <button id="reset__btn">Reset Canvas</button>
+            </div>
+            <div id='grid' class='grid'></div>
+        </div>
+        <script src="Etch.js"></script>
+    </body>
 </html>
